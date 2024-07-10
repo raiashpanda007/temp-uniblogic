@@ -101,7 +101,7 @@ function PostForm({ post }) {
   return (
     <div className="Post_Form">
       <div className="Heading_Post_Form">
-        <h1>{post?'Edit Post' : 'Create POst'}</h1>
+        <h1>{post?'Edit Post' : 'Create Post'}</h1>
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="">
         <Input
@@ -139,6 +139,7 @@ function PostForm({ post }) {
         <SelectOptions
           options={["active", "inactive"]}
           theme={theme}
+          className={"Select_Status_Post"}
           {...register("status", { required: true })}
         />
         <ButtonComponent

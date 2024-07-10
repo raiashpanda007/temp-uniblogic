@@ -54,7 +54,7 @@ function Header() {
               item.active ? (
                 <li key={item.slug}>
                 
-                  <ButtonComponent theme={theme} label={item.name} onClick={() => navigate(item.route)}/>
+                  <ButtonComponent theme={theme} label={item.name} className={'Heading_Button_Size'} onClick={() => navigate(item.route)}/>
                 
                 </li>
               ) : null

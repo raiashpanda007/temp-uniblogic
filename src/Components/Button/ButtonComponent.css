@@ -72,4 +72,21 @@
   .Button_Light:hover::before {
     transform: translateX(0);
   }
+  @media (max-width: 768px) {
+    .Button_Dark {
+      height: 2rem;
+      
+    }
+    .Button_Text{
+      font-size: 0.4rem;
+    }
+  
+    .Button_Light {
+      height: 2rem;
+      
+    }
+    .Button_Post_Form .Button_Text{
+      font-size: 1rem;
+    }
+  }
   

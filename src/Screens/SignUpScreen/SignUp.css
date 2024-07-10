@@ -52,3 +52,15 @@
         transform: translateY(0);
     }
 }
+@media screen and (max-width: 768px){
+    .SignUP .SignUP_Card{
+        width: 80%;
+    }
+    .SignUP_Card .Button_Text{
+        font-size: 1rem;
+    }
+    .Select_Status_Post{
+        width: 50%;
+    }
+    
+}

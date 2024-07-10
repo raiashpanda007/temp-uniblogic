@@ -58,4 +58,38 @@
 
 }
 
+@media (max-width: 768px) {
+
+    .Welcome_Content_Heading h1{
+        font-size: 0.2rem;
+    }
+    
+    .Welcome_Content_Light{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .Welcome_Content_Dark{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .Welcome_Content_Dark h1{
+        font-size: 4rem;
+    }
+    .Welcome_Content_Light h1{
+        font-size: 4rem;
+    }
+    .Welcome_Content_Info{
+        font-size: 1.2rem;
+    }
+    .Welcome_Content_Buttons{
+        width: 100%;
+    }
+    .Link_Welcome{
+        width: 100%;
+    }
+    .Welcome_Buttons .Button_Text{
+        font-size: 0.8rem;
+    }
+}
+
   

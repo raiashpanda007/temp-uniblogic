@@ -140,3 +140,26 @@ ul {
   align-items: center;
   justify-content: space-evenly;
 }
+
+@media screen and (max-width: 768px) {
+  .Header {
+    height: 4rem;
+  }
+
+  .Header_Nav {
+    width: 80%;
+  }
+
+  .Header_Nav nav {
+    width: 100%;
+  }
+
+  .Header_Nav nav ul li {
+    width: 25%;
+  }
+
+  .Header_More_Options {
+    width: 40%;
+  }
+ 
+}

@@ -61,3 +61,11 @@
         
     }
 }
+@media (max-width: 768px){
+    .Login .Login_Card{
+        width: 80%;
+    }
+    .Button_Login .Button_Text{
+        font-size: 1rem;
+    }
+}

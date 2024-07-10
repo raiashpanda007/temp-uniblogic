@@ -17,8 +17,6 @@
 .Form{
     display: flex;
     flex-direction: column;
-    
-    
 
 }
 .Input_Title_Post{
@@ -27,7 +25,7 @@
     margin: 0px;
 }
 .Heading_Post_Form{
-    margin-top: 30rem ;
+    margin-top: 10rem ;
 }
 .PreviewImage{
     display: flex;

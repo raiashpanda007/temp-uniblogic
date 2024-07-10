@@ -18,10 +18,10 @@ function Welcome() {
         </span>
         <div className="Welcome_Content_Buttons">
           <Link to = {'/loginUser'} className='Link_Welcome'>
-            <ButtonComponent theme={theme} label="LOGIN" />
+            <ButtonComponent theme={theme} label="LOGIN" className={'Welcome_Buttons'} />
           </Link>
           <Link to = {'/sign-up'} className='Link_Welcome'>
-            <ButtonComponent theme={theme} label="SIGN UP"  />
+            <ButtonComponent theme={theme} label="SIGN UP"  className={'Welcome_Buttons'}/>
           </Link>
         </div>
       </div>
