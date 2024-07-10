@@ -4,9 +4,11 @@ import { useSelector } from 'react-redux';
 import LetterByLetterText from './LetterByLetterText';
 import { ButtonComponent } from '../../Components/indexComponent';
 import { Link } from 'react-router-dom';
+import conf from '../../conf/config.js';
 function Welcome() {
   const theme = useSelector((state) => state.theme.currtheme);
   return (
+    
     <div className="Welcome">
       <div className={`Welcome_Content_${theme}`}>
         Welcome to{' '}

@@ -27,9 +27,8 @@ function LoginScreen() {
         const userData = await auth.getCurrentUser();
 
         if (userData) {
-          console.log("currentUserData", userData);
           dispatch(LoginSlice(userData));
-          alert("Login Success as : ",userData.name);
+          
           dispatch(setLoading(false));
           navigate(`/home`);
         }

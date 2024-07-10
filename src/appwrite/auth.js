@@ -4,19 +4,19 @@ import conf from "../conf/config";
 export class AuthService {
   client = new Client();
   account;
-  
+
   constructor() {
+
     this.client
-      .setEndpoint(conf.appwriteUrl) // Ensure this URL is correct
-      .setProject(conf.appwriteProjectId); // Ensure this project ID is correct
+      .setEndpoint(conf.appwriteUrl) 
+      .setProject(conf.appwriteProjectId); 
     this.account = new Account(this.client);
-    
   }
 
   async signUp({ email, password, username }) {
     try {
-      console.log("Appwrite URL:", conf.appwriteUrl);
-      console.log("Appwrite Project ID:", conf.appwriteProjectId);
+     
+      
 
       const userAccount = await this.account.create(
         ID.unique(),
@@ -61,5 +61,6 @@ export class AuthService {
     }
   }
 }
+
 const auth = new AuthService();
-export  default auth;
+export default auth;

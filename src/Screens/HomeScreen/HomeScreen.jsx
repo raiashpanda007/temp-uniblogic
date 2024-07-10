@@ -3,7 +3,7 @@ import './HomeScreen.css'
 import service from '../../appwrite/appwriteConfig'
 import { Card } from '../../Components/indexComponent'
 import { useEffect,useState } from 'react'
-import { set } from 'react-hook-form'
+
 function HomeScreen() {
     const [posts,setPosts] = useState([]);
     const getPosts = async () => {
@@ -18,7 +18,6 @@ function HomeScreen() {
 
     useEffect(()=>{
         getPosts();
-        console.log('HomeScreen :: posts',posts);
     },[])
   return (
     

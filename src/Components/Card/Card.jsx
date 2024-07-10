@@ -24,7 +24,7 @@ function Card({post}) {
   return (
     
     <div className={`Card_${theme}`} onClick={() => navigate(`/post/${post.$id}`)}>
-        {console.log('Card :: post',post)}
+  
         <div className="Card_Image">
             <img src={ImageSrc} alt="Avatar" />
         </div>

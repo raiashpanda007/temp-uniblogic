@@ -69,8 +69,7 @@ function PostScreen() {
 
   return (
     <div className={`Post_${theme}`}>
-      {console.log('User ::',user)}
-      {console.log("PostDetails ::", postDetails)}
+      
       <div className="Post_Details">
         {postDetails.userID ===user.$id &&<div className="Post_Options">
           <div className="Icon" onClick={handleEdit}>
