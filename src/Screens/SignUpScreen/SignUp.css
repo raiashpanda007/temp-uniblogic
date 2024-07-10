@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.SignUP{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+    
+}
+.SignUP .SignUP_Card{
+    height: 80%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: slideInFromLeft 1s ease-in-out;
+
+    
+}
+.SignUP_Card_Heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SignUP_Card_Heading h1{
+    font-size: 3.5rem;
+}
+.SignUPInput{
+    width: 100%;
+    border: 1px solid white;
+}
+.SignUP_Form{
+    width: 100%;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

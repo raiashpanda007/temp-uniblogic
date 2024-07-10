@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Login{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+    
+}
+.Login .Login_Card{
+    height: 80%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: slideInFromLeft 1s ease-in-out;
+    
+}
+.Login_Card_Heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Login_Card_Heading h1{
+    font-size: 3.5rem;
+}
+.LoginInput{
+    width: 100%;
+    border: 1px solid white;
+}
+.Login_Form{
+    width: 100%;
+}
+.Button_Login{
+    margin-top: 15px;
+}
+.Login_sign_up{
+    margin:10px 0px;
+}
+.Login_sign_up_Dark{
+    color:lightpink
+}
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+}

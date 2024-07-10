@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.Post_Form{
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+   
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+.Input_Title_Post{
+    
+    width: 50%;
+    margin: 0px;
+}
+.Heading_Post_Form{
+    margin-top: 30rem ;
+}
+.PreviewImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+}
+.PreviewImage img{
+    height: 300px;
+    width: 360px;
+}

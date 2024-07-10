@@ -1,0 +1,75 @@
+.Button_Dark {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .Button_Dark::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: translateX(-101%);
+    transition: transform 0.5s;
+  }
+  
+  .Button_Text {
+    position: relative;
+    transition: color 0.5s;
+    font-weight: 600;
+  }
+  
+  .Button_Dark:hover .Button_Text {
+    color: black;
+  }
+  
+  .Button_Dark:hover::before {
+    transform: translateX(0);
+  }
+  
+  /* Light Mode Styles */
+  .Button_Light {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .Button_Light::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform: translateX(-101%);
+    transition: transform 0.5s;
+  }
+  
+  .Button_Light:hover .Button_Text {
+    color: white;
+  }
+  
+  .Button_Light:hover::before {
+    transform: translateX(0);
+  }
+  

@@ -1,0 +1,50 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Loader styles */
+.Loader {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backdrop-filter: blur(30px);
+    z-index: 1000;
+}
+.Loader ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Content styles and animation */
+.LoaderContent {
+    font-size: 2.5em;
+    animation: LoadingAnimation 2s infinite;
+}
+
+/* Hide when not visible */
+.NotVisible {
+    display: none;
+}
+
+/* Keyframes for the animation */
+@keyframes LoadingAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 0;
+    }
+}

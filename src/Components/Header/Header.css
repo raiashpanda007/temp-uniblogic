@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.Header {
+  position: relative;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  backdrop-filter: blur(30px);
+  z-index: 1000;
+}
+.Header_Logo {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header_Nav {
+  width: 60%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.Header_Nav nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Header_Nav nav ul li {
+  width: 20%;
+}
+
+/* Dark Mode Styles */
+.Header_Nav_Button_Dark {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.Header_Nav_Button_Dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: translateX(-101%);
+  transition: transform 0.5s;
+}
+
+.Header_Nav_Button_Text {
+  position: relative;
+  transition: color 0.5s;
+  font-weight: 600;
+}
+
+.Header_Nav_Button_Dark:hover .Header_Nav_Button_Text {
+  color: black;
+}
+
+.Header_Nav_Button_Dark:hover::before {
+  transform: translateX(0);
+}
+
+/* Light Mode Styles */
+.Header_Nav_Button_Light {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.Header_Nav_Button_Light::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: translateX(-101%);
+  transition: transform 0.5s;
+}
+
+.Header_Nav_Button_Light:hover .Header_Nav_Button_Text {
+  color: white;
+}
+
+.Header_Nav_Button_Light:hover::before {
+  transform: translateX(0);
+}
+
+.Header_More_Options {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

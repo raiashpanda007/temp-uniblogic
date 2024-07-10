@@ -1,0 +1,39 @@
+/* SelectOptions.css */
+.SelectOptions {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.SelectOptions select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 1rem;
+    appearance: none; /* Remove default arrow */
+}
+
+.SelectOptions select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.SelectOptions option {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Dark theme styles */
+.SelectOptions.dark select {
+    background-color: #333;
+    color: #fff;
+    border-color: #444;
+}
+
+.SelectOptions.dark select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}

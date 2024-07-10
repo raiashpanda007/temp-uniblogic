@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Card_Dark{
+    height: 250px;
+    width: 350px;
+    cursor: pointer;
+  
+    border-radius: 10px;
+}
+
+.Card_Light{
+    height: 250px;
+    width: 350px;
+    cursor: pointer;
+    
+    border-radius: 10px;
+}
+.Card_Dark:hover {
+   animation: OnHoverDark 0.3s linear forwards; 
+    
+}
+.Card_Light:hover {
+    animation: OnHoverLight 0.3s linear forwards; 
+     
+ }
+
+ .Card_Image{
+    padding: 5px;
+    width: 100%;
+    height: 60%;
+}
+.Card_Image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.Card_Content{
+    padding: 5px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@keyframes OnHoverLight {
+    0%{
+        transform: scale(1);
+        box-shadow: 1px 1px 10px 1px black;
+    }
+    100%{
+        transform: scale(1.025);
+        box-shadow: 1px 1px 10px 1px black;
+        background-color: rgb(175, 175, 175);
+    }
+
+}
+
+@keyframes OnHoverDark {
+    0%{
+        transform: scale(1);
+        box-shadow: 1px 1px 10px 1px white;
+       
+    }
+    100%{
+        transform: scale(1.025);
+        box-shadow: 1px 1px 10px 1px white;
+        background-color: #333;
+    }
+    
+}

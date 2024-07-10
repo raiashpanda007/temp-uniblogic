@@ -1,0 +1,38 @@
+button{
+    height: 3rem;
+    width: 3rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.MoreOption_Buttons_Dark{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.MoreOption_Buttons_Light{
+    background-color: white;
+    color: black;
+    border: none;
+}
+.UserButton_Dark{
+    border: 1px solid white;
+    transition: 0.5s ease-in-out;
+}
+.UserButton_Light{
+    border: 1px solid black;
+    transition: 0.5s ease-in-out;
+}
+.UserButton_Dark:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+.UserButton_Light:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in-out;
+}

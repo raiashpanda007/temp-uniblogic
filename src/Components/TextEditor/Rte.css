@@ -1,0 +1,32 @@
+/* editor-themes.css */
+.Text_Editor{
+    width: 95%;
+}
+/* Light Theme */
+.light-theme .tox .tox-toolbar__primary {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  .light-theme .tox .tox-toolbar__primary .tox-tbtn {
+    color: #000;
+  }
+  
+  .light-theme .tox .tox-toolbar__primary .tox-tbtn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Dark Theme */
+  .dark-theme .tox .tox-toolbar__primary {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-theme .tox .tox-toolbar__primary .tox-tbtn {
+    color: #fff;
+  }
+  
+  .dark-theme .tox .tox-toolbar__primary .tox-tbtn:hover {
+    background-color: #555;
+  }
+  
