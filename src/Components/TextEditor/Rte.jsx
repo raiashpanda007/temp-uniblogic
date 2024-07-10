@@ -2,7 +2,7 @@ import React from "react";
 import "./Rte.css";
 import { Controller } from "react-hook-form";
 import { Editor } from "@tinymce/tinymce-react";
-import conf from "../../conf/config";
+import conf from "../../conf/config.js";
 function Rte({ control, name, label, theme, defaultValue = "" }) {
   return (
     <div className="Text_Editor">
@@ -14,7 +14,7 @@ function Rte({ control, name, label, theme, defaultValue = "" }) {
           <Editor
             
             initialValue={defaultValue}
-            apiKey={'xju4ag9xc2lla8jhiiqqgpdrektps53geg9fftvvtkk8nrty'}
+            apiKey={conf.tinymceApiKey}
             init={{
               height: 500,
               menubar: true,
